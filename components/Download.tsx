@@ -106,8 +106,8 @@ const Download = () => {
 
   const platforms = [
     { id: "windows", name: "Windows", icon: Windows },
-    { id: "macos", name: "macOS", icon: Apple },
-    { id: "linux", name: "Linux", icon: Linux },
+    { id: "macos", name: "希沃", icon: Apple },
+    { id: "linux", name: "鸿合", icon: Linux },
   ];
   
   // 根据activeTab更新activeIndex
@@ -124,7 +124,7 @@ const Download = () => {
 
   const downloadData = {
     macos: {
-      title: "MacOS下载",
+      title: "希沃下载",
       description: "支持Apple Silicon和Intel处理器。",
       downloads: [
         {
@@ -158,7 +158,7 @@ const Download = () => {
       ]
     },
     linux: {
-      title: "Linux下载",
+      title: "鸿合下载",
       description: "暂时只支持Debian，其他版本请尽情期待",
       downloads: [
         {
@@ -179,7 +179,7 @@ const Download = () => {
         <div className="mb-16">
           <h1 className="text-5xl font-bold mb-6 text-white">下载ClassOS</h1>
           <p className="text-xl text-gray-300 max-w-3xl leading-relaxed">
-            下载ClassOS应用程序以在您的设备上使用。我们提供了适用于macOS、Windows和Linux的版本，确保您可以在任何平台上享受我们的软件。
+            下载ClassOS应用程序以在您的设备上使用。我们提供了适用于希沃、Windows和鸿合的版本，确保您可以在任何平台上享受我们的软件。
           </p>
           {/* 添加显示最新版本 */}
           <Version latestVer={latestVer} publishedDate={publishedDate} loading={loading} />

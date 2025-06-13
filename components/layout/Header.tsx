@@ -27,7 +27,7 @@ const Header = () => {
         <a href="/">
           <div className="flex items-center space-x-2">
             <img src="/favicon.png" alt="Logo" className="h-8 w-8" />
-            <span className="text-xl font-bold text-gray-100">Class Widgets</span>
+            <span className="text-xl font-bold text-gray-100">ClassOS</span>
           </div>
         </a>
         <div className="hidden md:flex space-x-6">

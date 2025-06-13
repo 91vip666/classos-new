@@ -21,7 +21,7 @@ const Version = ({ latestVer, publishedDate, loading, size }: VersionProps) => {
         <>
           <img
             src={logoImage.src}
-            alt="Class Widgets Logo"
+            alt="ClassOS Logo"
             className="size-12"
           />
           <div className={size === "auto" ? "text-center" : ""}>

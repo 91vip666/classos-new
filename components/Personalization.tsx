@@ -31,9 +31,9 @@ const Personalization = () => {
           className="text-md leading-tight text-[#87878A] xl:text-lg"
           data-aos="fade-up"
         >
-          在 Class Widgets 中，提供了基于 Python
+          在 ClassOS 中，提供了基于 Python
           的插件系统和插件广场；你可以在插件广场中安装您需要的插件。以及彰显个性的主题系统，让你搭建出独一无二的
-          Class Widgets。
+          ClassOS。
         </p>
       </div>
       <div className="rounded-lg border-2 border-[#303640]" data-aos="fade-left">

@@ -1,4 +1,3 @@
-import linuxImage from "@/assets/images/screenshots/linux.png";
 import macosImage from "@/assets/images/screenshots/macos.png";
 import win7Image from "@/assets/images/screenshots/win7.png";
 import win11Image from "@/assets/images/screenshots/win11.png";
@@ -15,7 +14,7 @@ const Compatibility = () => {
     });
   }, []);
 
-  const rawScreenshots = [win11Image, linuxImage, win7Image, macosImage].map(
+  const rawScreenshots = [win11Image,  win7Image, macosImage].map(
     (it) => it.src,
   );
   const screenshots = [
@@ -171,23 +170,18 @@ const Compatibility = () => {
         className="order-1 flex flex-col justify-center gap-6 lg:order-2"
         data-aos="fade-left"
       >
-        <p
-          className="bg-gradient-to-r from-[#ffc182] to-[#5d64e4] bg-clip-text text-lg font-semibold text-transparent"
-          data-aos="zoom-in"
-        >
-          # 多端支持
-        </p>
+        
         <h1
           className="ease-mobai-bounce text-2xl leading-snug font-semibold whitespace-pre-line transition-all duration-500 lg:gap-4 lg:text-3xl xl:gap-8 xl:text-4xl"
           data-aos="fade-up"
         >
-          {`近乎完美的\n兼容性`}
+          {`支持了绝大部分\n主流教学主机及品牌机`}
         </h1>
         <p
           className="text-md leading-tight text-[#87878A] xl:text-lg"
           data-aos="fade-up"
         >
-          {`ClassOS 基于 PyQt 构建，为 Windows、Linux、MacOS 三大主流操作系统提供支持`}
+          {`ClassOS 支持Windows 7 , 10 , 11的台式机及希沃及鸿合等品牌机`}
         </p>
       </div>
     </div>

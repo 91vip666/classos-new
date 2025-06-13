@@ -27,7 +27,7 @@ const Desktop = () => {
           className="ease-mobai-bounce flex flex-row justify-center gap-2 text-xl font-semibold transition-all duration-500 md:text-2xl lg:gap-4 lg:text-3xl xl:gap-8 xl:text-4xl"
           data-aos="fade-down"
         >
-          <span>向<span className="gradient-text">未来形态</span>的课程表 说你好</span>
+          <span>向<span className="gradient-text">智能化</span>的教学系统 说你好</span>
         </p>
       </div>
     </div>

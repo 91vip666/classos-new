@@ -29,7 +29,7 @@ const Test = () => {
           colorFrom="#4ecdc4"
           colorTo="#44a08d"
           title="全新的隐藏方式"
-          content="全新隐藏方式——浮窗，能够让 Class Widgets 的重要信息浓缩为一块浮动的窗口，更轻巧便捷。尽量减小其对教学工作的干扰。"
+          content="全新隐藏方式——浮窗，能够让 ClassOS 的重要信息浓缩为一块浮动的窗口，更轻巧便捷。尽量减小其对教学工作的干扰。"
           data-aos="fade-up"
           data-aos-delay="200"
         />
@@ -38,7 +38,7 @@ const Test = () => {
           colorFrom="#a8edea"
           colorTo="#fed6e3"
           title="极致的设计语言"
-          content="Class Widgets 采用了由微软推出的 Fluent Design 设计语言，使界面更加简洁、舒适和流畅，且使用了 QFluentWidgets UI库。"
+          content="ClassOS 采用了由微软推出的 Fluent Design 设计语言，使界面更加简洁、舒适和流畅，且使用了 QFluentWidgets UI库。"
           data-aos="fade-up"
           data-aos-delay="300"
         />
