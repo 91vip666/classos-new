@@ -187,7 +187,7 @@ const Compatibility = () => {
           className="text-md leading-tight text-[#87878A] xl:text-lg"
           data-aos="fade-up"
         >
-          {`Class Widgets 基于 PyQt 构建，为 Windows、Linux、MacOS 三大主流操作系统提供支持`}
+          {`ClassOS 基于 PyQt 构建，为 Windows、Linux、MacOS 三大主流操作系统提供支持`}
         </p>
       </div>
     </div>

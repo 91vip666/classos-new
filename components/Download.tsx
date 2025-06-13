@@ -177,9 +177,9 @@ const Download = () => {
       <div className="max-w-6xl mx-auto px-8 py-16 md:px-12 lg:px-16">
         {/* Header */}
         <div className="mb-16">
-          <h1 className="text-5xl font-bold mb-6 text-white">下载Class Widgets</h1>
+          <h1 className="text-5xl font-bold mb-6 text-white">下载ClassOS</h1>
           <p className="text-xl text-gray-300 max-w-3xl leading-relaxed">
-            下载Class Widgets应用程序以在您的设备上使用。我们提供了适用于macOS、Windows和Linux的版本，确保您可以在任何平台上享受我们的软件。
+            下载ClassOS应用程序以在您的设备上使用。我们提供了适用于macOS、Windows和Linux的版本，确保您可以在任何平台上享受我们的软件。
           </p>
           {/* 添加显示最新版本 */}
           <Version latestVer={latestVer} publishedDate={publishedDate} loading={loading} />
@@ -301,7 +301,7 @@ const Download = () => {
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-6 shadow-2xl border border-white/10">
                 <img
                   src={logoImage.src}
-                  alt="Class Widgets"
+                  alt="ClassOS"
                   className="size-32 rounded-2xl"
                 />
               </div>

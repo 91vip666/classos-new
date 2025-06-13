@@ -14,10 +14,10 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <img
                 src="/favicon.png"
-                alt="Class Widgets Logo"
+                alt="ClassOS Logo"
                 className="h-10 w-10"
               />
-              <span className="text-xl font-bold">Class Widgets</span>
+              <span className="text-xl font-bold">ClassOS</span>
             </div>
             <p className="text-[#87878A]">
               为您的桌面带来全新的个性化体验，支持Windows、macOS和Linux系统。
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 border-t border-[#1A1B26] pt-8 text-center text-[#87878A]">
-          <p>© {new Date().getFullYear()} Class Widgets. 基于 GPL v3 协议发布。</p>
+          <p>© {new Date().getFullYear()} ClassOS. 基于 GPL v3 协议发布。</p>
         </div>
       </div>
     </footer>

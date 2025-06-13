@@ -34,7 +34,7 @@ const Hero = () => {
           />
           <div className="ease-mobai-bounce flex flex-col gap-4 transition-all duration-500 md:gap-8">
             <div className="ease-mobai-bounce gap-4 text-3xl leading-snug font-semibold whitespace-pre-line transition-all duration-500 lg:text-4xl xl:text-5xl">
-              <h1 data-aos="fade-up">{`多样的桌面课表\n由我们定义的全新桌面形态`}</h1>
+              <h1 data-aos="fade-up">{`向未来形态的教学系统\n说你好`}</h1>
             </div>
             <div className="ease-mobai-bounce flex flex-col gap-4 transition-all duration-500 md:flex-row md:gap-8">
               <div className="flex flex-col gap-4 md:flex-row">
@@ -44,7 +44,7 @@ const Hero = () => {
                   data-aos="fade-left"
                 >
                   <Windows className="size-6" />
-                  <span className="text-lg lg:text-xl">下载 Class Widgets</span>
+                  <span className="text-lg lg:text-xl">下载 ClassOS</span>
                 </Button>
                 <TransparentButton
                   href="/download#macos"
