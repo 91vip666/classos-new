@@ -105,7 +105,7 @@ const Download = () => {
   }, []);
 
   const platforms = [
-    { id: "windows", name: "Windows", icon: Windows },
+    { id: "windows", name: "PC", icon: Windows },
     { id: "seewo", name: "希沃", icon: Apple },
     { id: "HiteVision", name: "鸿合", icon: Linux },
   ];
@@ -140,8 +140,8 @@ const Download = () => {
       ]
     },
     windows: {
-      title: "Windows下载",
-      description: "支持Windows7及以上版本。\n提供win7及win10及win11版本。",
+      title: "普通PC下载",
+      description: "支持win64位的普通PC电脑",
       downloads: [
         {
           name: "ClassOS 10",
@@ -180,9 +180,9 @@ const Download = () => {
       <div className="max-w-6xl mx-auto px-8 py-16 md:px-12 lg:px-16">
         {/* Header */}
         <div className="mb-16">
-          <h1 className="text-5xl font-bold mb-6 text-white">下载ClassOS</h1>
+          <h1 className="text-5xl font-bold mb-6 text-white">下载 ClassOS</h1>
           <p className="text-xl text-gray-300 max-w-3xl leading-relaxed">
-            下载ClassOS系统以在您的设备上使用。我们提供了适用于希沃、Windows和鸿合的版本，确保您可以在任何平台上享受我们的系统。
+            下载 ClassOS 系统以在您的设备上使用。我们提供了适用于希沃和鸿合的版本，确保您可以在任何平台上享受我们的系统。
           </p>
           {/* Proxy Toggle */}
           <div className="mt-8 flex items-center">
@@ -260,32 +260,32 @@ const Download = () => {
                       {/* Download Options */}
                       <div className="space-y-4">
                         {loading ? (
-                          <p className="text-gray-400">正在加载最新版本信息...</p>
-                        ) : (
-                          platformData.downloads.map((download, index) => (
-                            <div key={index} className="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
-                              <div className="flex items-center gap-4">
-                                <div>
-                                  <div className="flex items-center gap-2">
-                                    <span className="text-lg font-medium text-white">{download.name}</span>
-                                    <span className="px-2 py-1 rounded-md text-xs font-medium bg-green-500/20 text-green-300 border border-green-500/30">
-                                      {download.type}
-                                    </span>
-                                  </div>
-                                </div>
-                              </div>
-                              <a
-                                href={download.url}
-                                className="flex items-center gap-2 bg-white text-black px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300"
-                              >
-                                <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                </svg>
-                                下载
-                              </a>
-                            </div>
-                          ))
-                        )}
+          <p className="text-gray-400">正在加载最新版本信息...</p>
+        ) : (
+          platformData.downloads.map((download, index) => (
+            <div key={index} className="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center gap-4">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg font-medium text-white">{download.name}</span>
+                    <span className="px-2 py-1 rounded-md text-xs font-medium bg-green-500/20 text-green-300 border border-green-500/30">
+                      {download.type}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <a
+                href={download.url}
+                className="flex items-center gap-2 bg-white text-black px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-all duration-300"
+              >
+                <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                下载
+              </a>
+            </div>
+          ))
+        )}
                       </div>
                     </div>
                   );
