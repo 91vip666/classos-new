@@ -129,13 +129,13 @@ const Download = () => {
       downloads: [
         {
           name: "MT 71A",
+          type: "arm64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-seewo-arm64.zip`)
-
         },
         {
           name: "MT 41A",
+          type: "x64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-seewo-x64.zip`)
-
         }
       ]
     },
@@ -144,16 +144,19 @@ const Download = () => {
       description: "支持Windows7及以上版本。\n提供win7及win10及win11版本。",
       downloads: [
         {
-          name: "ClassOS 10 x64",
+          name: "ClassOS 10",
+          type: "x64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64.zip`)
         },
         {
-          name: "ClassOS 7 x64",
+          name: "ClassOS 7",
+          type: "x86",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x86.zip`)
         },
         {
-          name: "ClassOS 11 x64",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64-11.zip`) // Assuming a different URL for ClassOS 11
+          name: "ClassOS 11",
+          type: "x64",
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64-11.zip`)
         }
       ]
     },
@@ -163,8 +166,9 @@ const Download = () => {
       downloads: [
         {
           name: "鸿合",
+          type: "x64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Debian10.zip`)
-        },
+        }
       ]
     }
   };
@@ -264,6 +268,9 @@ const Download = () => {
                                 <div>
                                   <div className="flex items-center gap-2">
                                     <span className="text-lg font-medium text-white">{download.name}</span>
+                                    <span className="px-2 py-1 rounded-md text-xs font-medium bg-green-500/20 text-green-300 border border-green-500/30">
+                                      {download.type}
+                                    </span>
                                   </div>
                                 </div>
                               </div>
