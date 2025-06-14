@@ -106,7 +106,7 @@ const Download = () => {
 
   const platforms = [
     { id: "windows", name: "PC", icon: Windows },
-    { id: "seewo", name: "希沃", icon: Apple },
+    { id: "seewo", name: "SEEWO", icon: Apple },
     { id: "HiteVision", name: "鸿合", icon: Linux },
   ];
   
@@ -124,16 +124,16 @@ const Download = () => {
 
   const downloadData = {
     seewo: {
-      title: "希沃下载",
-      description: "支持MT 71A和MT 41A。",
+      title: "SEEWO一体机下载",
+      description: "支持MT71A和MT41A。",
       downloads: [
         {
-          name: "MT 71A",
-          type: "arm64",
+          name: "MT71A",
+          type: "x64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-seewo-arm64.zip`)
         },
         {
-          name: "MT 41A",
+          name: "MT41A",
           type: "x64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-seewo-x64.zip`)
         }
