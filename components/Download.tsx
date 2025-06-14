@@ -140,8 +140,8 @@ const Download = () => {
       ]
     },
     windows: {
-      title: "改成PC",
-      description: "普通PC",
+      title: "Windows下载",
+      description: "支持Windows7及以上版本。\n提供win7及win10及win11版本。",
       downloads: [
         {
           name: "ClassOS 10",
