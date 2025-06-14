@@ -25,8 +25,8 @@ const Download = () => {
   // 添加哈希值到平台ID的映射
   const hashToPlatform: Record<string, string> = {
     '#win': 'windows',
-    '#macos': 'macos',
-    '#linux': 'linux'
+    '#seewo': 'seewo',
+    '#HiteVision': 'HiteVision'
   };
 
   // 更新滑块位置
@@ -94,7 +94,7 @@ const Download = () => {
       } catch (error) {
         console.error("获取最新release失败:", error);
         // 失败时使用默认版本号和空日期
-        setLatestVer('v1.1.7.1');
+        setLatestVer('MT 41A');
         setPublishedDate(null);
       } finally {
         setLoading(false);
@@ -106,8 +106,8 @@ const Download = () => {
 
   const platforms = [
     { id: "windows", name: "Windows", icon: Windows },
-    { id: "macos", name: "希沃", icon: Apple },
-    { id: "linux", name: "鸿合", icon: Linux },
+    { id: "seewo", name: "希沃", icon: Apple },
+    { id: "HiteVision", name: "鸿合", icon: Linux },
   ];
   
   // 根据activeTab更新activeIndex
@@ -123,20 +123,18 @@ const Download = () => {
   };
 
   const downloadData = {
-    macos: {
+    seewo: {
       title: "希沃下载",
-      description: "支持Apple Silicon和Intel处理器。",
+      description: "支持MT 71A和MT 41A。",
       downloads: [
         {
-          name: ver,
-          type: "Apple Silicon",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-macOS-arm64.zip`)
+          name: "MT 71A",
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-seewo-arm64.zip`)
 
         },
         {
-          name: ver,
-          type: "Intel",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-macOS-x64.zip`)
+          name: "MT 41A",
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-seewo-x64.zip`)
 
         }
       ]
@@ -146,24 +144,25 @@ const Download = () => {
       description: "支持Windows7及以上版本。\n提供x64和x86版本。",
       downloads: [
         {
-          name: ver,
-          type: "x64",
+          name: "ClassOS 10",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64.zip`)
         },
         {
-          name: ver,
-          type: "x86",
+          name: "ClassOS 7",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x86.zip`)
+        },
+        {
+          name: "ClassOS 11",
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64-11.zip`) // Assuming a different URL for ClassOS 11
         }
       ]
     },
-    linux: {
+    HiteVision: {
       title: "鸿合下载",
-      description: "暂时只支持Debian，其他版本请尽情期待",
+      description: "暂时没有，等几个月吧~",
       downloads: [
         {
-          name: ver,
-          type: "Debian",
+          name: "鸿合",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Debian10.zip`)
         },
       ]
@@ -179,10 +178,8 @@ const Download = () => {
         <div className="mb-16">
           <h1 className="text-5xl font-bold mb-6 text-white">下载ClassOS</h1>
           <p className="text-xl text-gray-300 max-w-3xl leading-relaxed">
-            下载ClassOS应用程序以在您的设备上使用。我们提供了适用于希沃、Windows和鸿合的版本，确保您可以在任何平台上享受我们的软件。
+            下载ClassOS系统以在您的设备上使用。我们提供了适用于希沃、Windows和鸿合的版本，确保您可以在任何平台上享受我们的系统。
           </p>
-          {/* 添加显示最新版本 */}
-          <Version latestVer={latestVer} publishedDate={publishedDate} loading={loading} />
           {/* Proxy Toggle */}
           <div className="mt-8 flex items-center">
             <Switch
@@ -267,13 +264,6 @@ const Download = () => {
                                 <div>
                                   <div className="flex items-center gap-2">
                                     <span className="text-lg font-medium text-white">{download.name}</span>
-                                    <span className={`px-2 py-1 rounded-md text-xs font-medium ${
-                                      download.type === "Beta"
-                                        ? "bg-orange-500/20 text-orange-300 border border-orange-500/30"
-                                        : "bg-green-500/20 text-green-300 border border-green-500/30"
-                                    }`}>
-                                      {download.type}
-                                    </span>
                                   </div>
                                 </div>
                               </div>

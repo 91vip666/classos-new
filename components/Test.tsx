@@ -16,29 +16,23 @@ const Test = () => {
     <div className="max-w-8xl mx-auto" data-aos="fade-up">
       <div className="grid gap-24 md:grid-cols-3">
         <Block
-          tag="通知"
-          colorFrom="#ff6b9d"
           colorTo="#c44569"
-          title="强大的通知系统"
-          content="提供了强大的通知系统，能够在上下课等时间点推出提醒；此外，插件也可调用通知接口，使其更加实用。"
+          title="增强了Windows的性能"
+          content="ClassOS 对性能设置方面重点关注，确保低配置电脑及一体机也能流畅使用课件功能[不同系列针对的配置不同]。"
           data-aos="fade-up"
           data-aos-delay="100"
         />
         <Block
-          tag="浮窗"
-          colorFrom="#4ecdc4"
           colorTo="#44a08d"
-          title="全新的隐藏方式"
-          content="全新隐藏方式——浮窗，能够让 ClassOS 的重要信息浓缩为一块浮动的窗口，更轻巧便捷。尽量减小其对教学工作的干扰。"
+          title="课件与软件"
+          content="ClassOS 中内置了WPS或Microsoft Office365等办公软件，重装完即可无缝上课。"
           data-aos="fade-up"
           data-aos-delay="200"
         />
         <Block
-          tag="设计"
-          colorFrom="#a8edea"
           colorTo="#fed6e3"
-          title="极致的设计语言"
-          content="ClassOS 采用了由微软推出的 Fluent Design 设计语言，使界面更加简洁、舒适和流畅，且使用了 QFluentWidgets UI库。"
+          title="实用工具"
+          content="ClassOS 内置了PotPlayer和Bandizip以及IDM等实用软件。"
           data-aos="fade-up"
           data-aos-delay="300"
         />

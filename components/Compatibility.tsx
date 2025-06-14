@@ -1,4 +1,4 @@
-import macosImage from "@/assets/images/screenshots/macos.png";
+import seewoImage from "@/assets/images/screenshots/seewo.png";
 import win7Image from "@/assets/images/screenshots/win7.png";
 import win11Image from "@/assets/images/screenshots/win11.png";
 import "aos/dist/aos.css";
@@ -14,7 +14,7 @@ const Compatibility = () => {
     });
   }, []);
 
-  const rawScreenshots = [win11Image,  win7Image, macosImage].map(
+  const rawScreenshots = [win11Image,  win7Image, seewoImage].map(
     (it) => it.src,
   );
   const screenshots = [

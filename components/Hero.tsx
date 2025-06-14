@@ -47,14 +47,14 @@ const Hero = () => {
                   <span className="text-lg lg:text-xl">下载 ClassOS</span>
                 </Button>
                 <TransparentButton
-                  href="/download#macos"
+                  href="/download#seewo"
                   className="hidden w-fit flex-row items-center gap-2 lg:flex"
                   data-aos="fade-left"
                 >
                   <Apple className="size-6" />
                 </TransparentButton>
                 <TransparentButton
-                  href="/download#linux"
+                  href="/download#HiteVision"
                   className="hidden w-fit flex-row items-center gap-2 lg:flex"
                   data-aos="fade-left"
                 >
@@ -70,7 +70,7 @@ const Hero = () => {
                   <span className="text-lg lg:text-xl">文档</span>
                 </TransparentButton>
                 <TransparentButton
-                  href="https://www.yuque.com/rinlit/standards"
+                  href="https://qm.qq.com/cgi-bin/qm/qr?authKey=C7JIQte%2B2z6j1lWlIMQixh%2FU26dkv0UD8jBVWfmwp3gZx%2BP4m%2BPbc4NHLVFTkjEc&k=7-bdHG5hLWUt0et0_rByLgf_hjPT622Z&noverify=0"
                   className="flex w-fit flex-row items-center gap-2"
                   data-aos="fade-up"
                 >
