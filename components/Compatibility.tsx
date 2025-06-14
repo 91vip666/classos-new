@@ -1,4 +1,4 @@
-import seewoImage from "@/assets/images/screenshots/seewo.png";
+import seewoImage from "@/assets/images/screenshots/macos.png";
 import win7Image from "@/assets/images/screenshots/win7.png";
 import win11Image from "@/assets/images/screenshots/win11.png";
 import "aos/dist/aos.css";

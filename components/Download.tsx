@@ -141,18 +141,18 @@ const Download = () => {
     },
     windows: {
       title: "Windows下载",
-      description: "支持Windows7及以上版本。\n提供x64和x86版本。",
+      description: "支持Windows7及以上版本。\n提供win7及win10及win11版本。",
       downloads: [
         {
-          name: "ClassOS 10",
+          name: "ClassOS 10 x64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64.zip`)
         },
         {
-          name: "ClassOS 7",
+          name: "ClassOS 7 x64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x86.zip`)
         },
         {
-          name: "ClassOS 11",
+          name: "ClassOS 11 x64",
           url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64-11.zip`) // Assuming a different URL for ClassOS 11
         }
       ]
