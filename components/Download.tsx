@@ -18,9 +18,6 @@ const Download = () => {
   const tabsRef = useRef<HTMLDivElement>(null);
   const [loaded, setLoaded] = useState(false); // 新增状态
   const [useProxy, setUseProxy] = useState(true); // 新增代理开关状态
-  const [latestVer, setLatestVer] = useState<string | null>(null); // 新增最新版本状态
-  const [publishedDate, setPublishedDate] = useState<string | null>(null); // 新增发布日期状态
-  const [loading, setLoading] = useState(true); // 新增加载状态
 
   // 添加哈希值到平台ID的映射
   const hashToPlatform: Record<string, string> = {
@@ -78,31 +75,7 @@ const Download = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [activeTab]);
 
-  // 获取最新release版本号
-  useEffect(() => {
-    const fetchLatestRelease = async () => {
-      try {
-        const response = await fetch('https://ghfile.geekertao.top/https://api.github.com/repos/Class-Widgets/Class-Widgets/releases/latest');
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setLatestVer(data.tag_name);
-        // 格式化日期
-        const date = new Date(data.published_at);
-        setPublishedDate(date.toLocaleDateString('zh-CN')); // 格式化为本地日期字符串
-      } catch (error) {
-        console.error("获取最新release失败:", error);
-        // 失败时使用默认版本号和空日期
-        setLatestVer('MT 41A');
-        setPublishedDate(null);
-      } finally {
-        setLoading(false);
-      }
-    };
 
-    fetchLatestRelease();
-  }, []);
 
   const platforms = [
     { id: "windows", name: "PC", icon: Windows },
@@ -116,7 +89,6 @@ const Download = () => {
     setActiveIndex(index);
   }, [activeTab]);
 
-  const ver = latestVer || 'v1.1.7.1'; // 使用最新版本号，如果未加载则使用默认值
   const proxy = 'https://ghfile.geekertao.top/';
   const getDownloadUrl = (baseUrl: string) => {
     return useProxy ? proxy + baseUrl : baseUrl;
@@ -130,12 +102,12 @@ const Download = () => {
         {
           name: "MT71A",
           type: "x64",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-seewo-arm64.zip`)
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/latest/download/ClassWidgets-seewo-arm64.zip`)
         },
         {
           name: "MT41A",
           type: "x64",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-seewo-x64.zip`)
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/latest/download/ClassWidgets-seewo-x64.zip`)
         }
       ]
     },
@@ -146,17 +118,17 @@ const Download = () => {
         {
           name: "ClassOS 10",
           type: "x64",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64.zip`)
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/latest/download/ClassWidgets-Windows-x64.zip`)
         },
         {
           name: "ClassOS 7",
           type: "x86",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x86.zip`)
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/latest/download/ClassWidgets-Windows-x86.zip`)
         },
         {
           name: "ClassOS 11",
           type: "x64",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Windows-x64-11.zip`)
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/latest/download/ClassWidgets-Windows-x64-11.zip`)
         }
       ]
     },
@@ -167,7 +139,7 @@ const Download = () => {
         {
           name: "鸿合",
           type: "x64",
-          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/download/${ver}/ClassWidgets-Debian10.zip`)
+          url: getDownloadUrl(`https://github.com/Class-Widgets/Class-Widgets/releases/latest/download/ClassWidgets-Debian10.zip`)
         }
       ]
     }
@@ -259,10 +231,7 @@ const Download = () => {
 
                       {/* Download Options */}
                       <div className="space-y-4">
-                        {loading ? (
-          <p className="text-gray-400">正在加载最新版本信息...</p>
-        ) : (
-          platformData.downloads.map((download, index) => (
+                        {platformData.downloads.map((download, index) => (
             <div key={index} className="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
               <div className="flex items-center gap-4">
                 <div>
@@ -284,8 +253,7 @@ const Download = () => {
                 下载
               </a>
             </div>
-          ))
-        )}
+          ))}
                       </div>
                     </div>
                   );
