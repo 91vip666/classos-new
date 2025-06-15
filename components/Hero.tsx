@@ -71,6 +71,7 @@ const Hero = () => {
                 </TransparentButton>
                 <TransparentButton
                   href="https://qm.qq.com/cgi-bin/qm/qr?authKey=C7JIQte%2B2z6j1lWlIMQixh%2FU26dkv0UD8jBVWfmwp3gZx%2BP4m%2BPbc4NHLVFTkjEc&k=7-bdHG5hLWUt0et0_rByLgf_hjPT622Z&noverify=0"
+                  target="_blank"
                   className="flex w-fit flex-row items-center gap-2"
                   data-aos="fade-up"
                 >
