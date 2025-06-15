@@ -30,12 +30,12 @@ const Docs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* 用户文档卡片 */}
           <div 
-            className="group bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-blue-400/60 hover:from-blue-500/20 hover:to-blue-600/10 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-1000 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-[1.03] hover:-translate-y-3 hover:rotate-1"
+            className="group bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-blue-400/60 hover:from-blue-500/20 hover:to-blue-600/10 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 ease-out"
             data-aos="fade-right"
           >
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-blue-500/20 group-hover:bg-blue-500/30 rounded-xl flex items-center justify-center transition-all duration-700 ease-out group-hover:scale-110">
+                <div className="w-12 h-12 bg-blue-500/20 group-hover:bg-blue-500/30 rounded-xl flex items-center justify-center transition-all duration-500 ease-out group-hover:scale-110">
                   <svg className="w-6 h-6 text-blue-400 group-hover:text-blue-300 transition-all duration-500 ease-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
@@ -83,7 +83,7 @@ const Docs = () => {
 
           {/* 开发者文档卡片 */}
           <div 
-            className="group bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-purple-400/60 hover:from-purple-500/20 hover:to-purple-600/10 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-2"
+            className="group bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-purple-400/60 hover:from-purple-500/20 hover:to-purple-600/10 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-700 ease-out"
             data-aos="fade-left"
           >
             <div className="flex flex-col gap-6">
