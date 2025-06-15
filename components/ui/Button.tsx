@@ -10,7 +10,7 @@ export const Button = ({
   return (
     <a
       href={href}
-      className={`ease-mobai-bounce transform rounded-md bg-white px-4 py-2 text-black transition-all duration-500 hover:scale-105 lg:px-6 lg:py-4 ${className}`}
+      className={`ease-mobai-bounce transform rounded-md px-4 py-2 transition-all duration-500 hover:scale-105 lg:px-6 lg:py-4 ${className || 'bg-white text-black'}`}
     >
       {children}
     </a>
