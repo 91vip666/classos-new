@@ -40,7 +40,7 @@ const Hero = () => {
               <div className="flex flex-col gap-4 md:flex-row">
                 <Button
                   href="/download#win"
-                  className="w-fit flex-row items-center gap-2 flex"
+                  className="w-fit flex-row items-center gap-2 flex bg-white text-black"
                   data-aos="fade-left"
                 >
                   <Windows className="size-6" />
