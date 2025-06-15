@@ -30,7 +30,7 @@ const Docs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* 用户文档卡片 */}
           <div 
-            className="group bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-blue-400/60 hover:from-blue-500/20 hover:to-blue-600/10 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-2"
+            className="group bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-blue-400/60 hover:from-blue-500/20 hover:to-blue-600/10 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] hover:scale-[1.02] hover:-translate-y-2"
             data-aos="fade-right"
           >
             <div className="flex flex-col gap-6">
@@ -83,7 +83,7 @@ const Docs = () => {
 
           {/* 开发者文档卡片 */}
           <div 
-            className="group bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-purple-400/60 hover:from-purple-500/20 hover:to-purple-600/10 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-2"
+            className="group bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-purple-400/60 hover:from-purple-500/20 hover:to-purple-600/10 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-1000 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] hover:scale-[1.02] hover:-translate-y-2"
             data-aos="fade-left"
           >
             <div className="flex flex-col gap-6">
