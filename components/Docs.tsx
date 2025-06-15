@@ -30,59 +30,51 @@ const Docs = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* 用户文档卡片 */}
           <div 
-            className="group relative overflow-hidden bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-blue-400/80 hover:from-blue-500/25 hover:to-blue-600/15 hover:shadow-2xl hover:shadow-blue-500/30 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-[1.03] hover:-translate-y-3 hover:rotate-1 cursor-pointer"
+            className="group bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-blue-400/60 hover:from-blue-500/20 hover:to-blue-600/10 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-1000 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:scale-[1.03] hover:-translate-y-3 hover:rotate-1"
             data-aos="fade-right"
           >
-            {/* 磁性光效 */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-400/10 via-cyan-400/20 to-blue-500/10 animate-pulse"></div>
-              <div className="absolute -top-2 -left-2 w-4 h-4 bg-blue-400 rounded-full blur-sm group-hover:animate-bounce"></div>
-              <div className="absolute -bottom-2 -right-2 w-3 h-3 bg-cyan-400 rounded-full blur-sm group-hover:animate-ping"></div>
-            </div>
             <div className="flex flex-col gap-6">
-              <div className="relative flex items-center gap-4">
-                <div className="relative w-12 h-12 bg-blue-500/20 group-hover:bg-blue-500/40 rounded-xl flex items-center justify-center transition-all duration-500 ease-out group-hover:scale-125 group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-blue-500/50">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-400/30 to-cyan-500/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:animate-pulse"></div>
-                  <svg className="relative z-10 w-6 h-6 text-blue-400 group-hover:text-white transition-all duration-500 ease-out group-hover:drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-blue-500/20 group-hover:bg-blue-500/30 rounded-xl flex items-center justify-center transition-all duration-700 ease-out group-hover:scale-110">
+                  <svg className="w-6 h-6 text-blue-400 group-hover:text-blue-300 transition-all duration-500 ease-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
-                <h2 className="text-2xl lg:text-3xl font-bold text-blue-400 group-hover:text-blue-200 transition-all duration-500 ease-out group-hover:scale-105 group-hover:drop-shadow-lg">用户文档</h2>
+                <h2 className="text-2xl lg:text-3xl font-bold text-blue-400 group-hover:text-blue-300 transition-all duration-500 ease-out">用户文档</h2>
               </div>
               
-              <p className="text-gray-300 text-lg leading-relaxed group-hover:text-gray-100 transition-all duration-500 ease-out group-hover:scale-[1.02] group-hover:translate-x-1">
+              <p className="text-gray-300 text-lg leading-relaxed group-hover:text-gray-200 transition-all duration-500 ease-out">
                 快速上手 ClassOS，了解基本功能和操作指南。包含安装教程、界面介绍、常用功能说明和故障排除等内容。
               </p>
               
               <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-200 transition-all duration-500 ease-out group-hover:translate-x-2">
-                  <svg className="w-5 h-5 group-hover:scale-125 group-hover:text-blue-400 transition-all duration-400 ease-out group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-300 transition-all duration-500 ease-out">
+                  <svg className="w-5 h-5 group-hover:scale-110 transition-all duration-300 ease-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
                   </svg>
-                  <span className="group-hover:font-medium transition-all duration-400 ease-out">快速入门指南</span>
+                  <span>快速入门指南</span>
                 </div>
-                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-200 transition-all duration-500 ease-out delay-75 group-hover:translate-x-2">
-                  <svg className="w-5 h-5 group-hover:scale-125 group-hover:text-blue-400 transition-all duration-400 ease-out delay-75 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-300 transition-all duration-500 ease-out delay-75">
+                  <svg className="w-5 h-5 group-hover:scale-110 transition-all duration-300 ease-out delay-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
                   </svg>
-                  <span className="group-hover:font-medium transition-all duration-400 ease-out delay-75">功能使用说明</span>
+                  <span>功能使用说明</span>
                 </div>
-                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-200 transition-all duration-500 ease-out delay-150 group-hover:translate-x-2">
-                  <svg className="w-5 h-5 group-hover:scale-125 group-hover:text-blue-400 transition-all duration-400 ease-out delay-150 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-300 transition-all duration-500 ease-out delay-150">
+                  <svg className="w-5 h-5 group-hover:scale-110 transition-all duration-300 ease-out delay-150" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
                   </svg>
-                  <span className="group-hover:font-medium transition-all duration-400 ease-out delay-150">常见问题解答</span>
+                  <span>常见问题解答</span>
                 </div>
               </div>
               
-              <div className="mt-4 relative">
+              <div className="mt-4">
                 <div className="group/button">
                   <Button
                     href="https://bcnaugqxbog0.feishu.cn/wiki/C8lzwSyrjilFBxkTcPyckgsCn3g"
-                    className="relative w-full justify-center bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white group-hover/button:shadow-xl group-hover/button:shadow-blue-500/50 group-hover/button:scale-[1.05] transition-all duration-400 ease-out overflow-hidden"
+                    className="w-full justify-center bg-blue-500 hover:bg-blue-600 text-white group-hover/button:shadow-lg group-hover/button:shadow-blue-500/30 group-hover/button:scale-[1.02] transition-all duration-300 ease-out"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover/button:translate-x-full transition-transform duration-700 ease-out"></div>
-                    <span className="relative text-lg group-hover/button:scale-110 group-hover/button:font-semibold transition-all duration-400 ease-out">查看用户文档</span>
+                    <span className="text-lg group-hover/button:scale-105 transition-transform duration-300 ease-out">查看用户文档</span>
                   </Button>
                 </div>
               </div>
@@ -91,59 +83,51 @@ const Docs = () => {
 
           {/* 开发者文档卡片 */}
           <div 
-            className="group relative overflow-hidden bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-purple-400/80 hover:from-purple-500/25 hover:to-purple-600/15 hover:shadow-2xl hover:shadow-purple-500/30 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-[1.03] hover:-translate-y-3 hover:-rotate-1 cursor-pointer"
+            className="group bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-2xl p-8 lg:p-10 backdrop-blur-sm hover:border-purple-400/60 hover:from-purple-500/20 hover:to-purple-600/10 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-700 ease-out hover:scale-[1.02] hover:-translate-y-2"
             data-aos="fade-left"
           >
-            {/* 磁性光效 */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-400/10 via-pink-400/20 to-purple-500/10 animate-pulse"></div>
-              <div className="absolute -top-2 -right-2 w-4 h-4 bg-purple-400 rounded-full blur-sm group-hover:animate-bounce"></div>
-              <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-pink-400 rounded-full blur-sm group-hover:animate-ping"></div>
-            </div>
             <div className="flex flex-col gap-6">
-              <div className="relative flex items-center gap-4">
-                <div className="relative w-12 h-12 bg-purple-500/20 group-hover:bg-purple-500/40 rounded-xl flex items-center justify-center transition-all duration-500 ease-out group-hover:scale-125 group-hover:-rotate-12 group-hover:shadow-lg group-hover:shadow-purple-500/50">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-400/30 to-pink-500/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:animate-pulse"></div>
-                  <svg className="relative z-10 w-6 h-6 text-purple-400 group-hover:text-white transition-all duration-500 ease-out group-hover:drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-purple-500/20 group-hover:bg-purple-500/30 rounded-xl flex items-center justify-center transition-all duration-500 ease-out group-hover:scale-110">
+                  <svg className="w-6 h-6 text-purple-400 group-hover:text-purple-300 transition-all duration-500 ease-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 </div>
-                <h2 className="text-2xl lg:text-3xl font-bold text-purple-400 group-hover:text-purple-200 transition-all duration-500 ease-out group-hover:scale-105 group-hover:drop-shadow-lg">开发者文档</h2>
+                <h2 className="text-2xl lg:text-3xl font-bold text-purple-400 group-hover:text-purple-300 transition-all duration-500 ease-out">开发者文档</h2>
               </div>
               
-              <p className="text-gray-300 text-lg leading-relaxed group-hover:text-gray-100 transition-all duration-500 ease-out group-hover:scale-[1.02] group-hover:-translate-x-1">
+              <p className="text-gray-300 text-lg leading-relaxed group-hover:text-gray-200 transition-all duration-500 ease-out">
                 深入了解 ClassOS 的技术架构，学习如何为 ClassOS 开发插件和扩展功能。包含 API 参考、开发环境搭建和最佳实践。
               </p>
               
               <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-200 transition-all duration-500 ease-out group-hover:-translate-x-2">
-                  <svg className="w-5 h-5 group-hover:scale-125 group-hover:text-purple-400 transition-all duration-400 ease-out group-hover:-rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-300 transition-all duration-500 ease-out">
+                  <svg className="w-5 h-5 group-hover:scale-110 transition-all duration-300 ease-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
                   </svg>
-                  <span className="group-hover:font-medium transition-all duration-400 ease-out">API 接口文档</span>
+                  <span>API 接口文档</span>
                 </div>
-                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-200 transition-all duration-500 ease-out delay-75 group-hover:-translate-x-2">
-                  <svg className="w-5 h-5 group-hover:scale-125 group-hover:text-purple-400 transition-all duration-400 ease-out delay-75 group-hover:-rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-300 transition-all duration-500 ease-out delay-75">
+                  <svg className="w-5 h-5 group-hover:scale-110 transition-all duration-300 ease-out delay-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
                   </svg>
-                  <span className="group-hover:font-medium transition-all duration-400 ease-out delay-75">插件开发指南</span>
+                  <span>插件开发指南</span>
                 </div>
-                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-200 transition-all duration-500 ease-out delay-150 group-hover:-translate-x-2">
-                  <svg className="w-5 h-5 group-hover:scale-125 group-hover:text-purple-400 transition-all duration-400 ease-out delay-150 group-hover:-rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-3 text-gray-400 group-hover:text-gray-300 transition-all duration-500 ease-out delay-150">
+                  <svg className="w-5 h-5 group-hover:scale-110 transition-all duration-300 ease-out delay-150" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
                   </svg>
-                  <span className="group-hover:font-medium transition-all duration-400 ease-out delay-150">技术架构说明</span>
+                  <span>技术架构说明</span>
                 </div>
               </div>
               
-              <div className="mt-4 relative">
+              <div className="mt-4">
                 <div className="group/button">
                   <Button
                     href="https://bcnaugqxbog0.feishu.cn/wiki/FoyywT7ffiZDqzktVaSctdhXn1e"
-                    className="relative w-full justify-center bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-400 hover:to-purple-500 text-white group-hover/button:shadow-xl group-hover/button:shadow-purple-500/50 group-hover/button:scale-[1.05] transition-all duration-400 ease-out overflow-hidden"
+                    className="w-full justify-center bg-purple-500 hover:bg-purple-600 text-white group-hover/button:shadow-lg group-hover/button:shadow-purple-500/30 group-hover/button:scale-[1.02] transition-all duration-300 ease-out"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover/button:translate-x-full transition-transform duration-700 ease-out"></div>
-                    <span className="relative text-lg group-hover/button:scale-110 group-hover/button:font-semibold transition-all duration-400 ease-out">查看开发者文档</span>
+                    <span className="text-lg group-hover/button:scale-105 transition-transform duration-300 ease-out">查看开发者文档</span>
                   </Button>
                 </div>
               </div>
