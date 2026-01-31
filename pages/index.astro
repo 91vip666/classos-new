@@ -1,0 +1,26 @@
+---
+import Hero from "@/components/Hero";
+import Layout from "@/layouts/Layout.astro";
+import Desktop from "@/components/Desktop";
+import Personalization from "@/components/Personalization";
+import Compatibility from "@/components/Compatibility";
+import Test from "@/components/Test";
+---
+
+<Layout transition:animate="slide">
+  <Hero />
+  <div class="max-w-8xl mx-auto flex flex-col gap-16 py-16 overflow-hidden">
+    <div
+      class="ease-mobai-bounce flex flex-col gap-24 px-8 transition-all duration-500 md:px-12 lg:px-16 xl:px-24"
+    >
+      <Desktop />
+      <div class="flex flex-col gap-24">
+        <Personalization />
+        <Compatibility client:load />
+      </div>
+      <div>
+        <Test />
+      </div>
+    </div>
+  </div>
+</Layout>

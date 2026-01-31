@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mobai-background: #11121c;
+  --color-mobai-foreground: #ffffff;
+
+  --ease-mobai-bounce: cubic-bezier(0.84, 0, 0.165, 1);
+  --ease-mobai-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --container-8xl: 96rem;
+}
+
+/* 定义自定义缓动函数类 */
+.ease-mobai-bounce {
+  transition-timing-function: var(--ease-mobai-bounce);
+}
+
+.ease-mobai-standard {
+  transition-timing-function: var(--ease-mobai-standard);
+}
+
+body {
+  background-color: var(--color-mobai-background);
+  color: var(--color-mobai-foreground);
+}
+
+/* 添加动态渐变文本效果 */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #1a2980, #26d0ce, #1a2980);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s ease infinite;
+}
