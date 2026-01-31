@@ -1,6 +1,3 @@
-import { useEffect } from 'preact/hooks';
-import "aos/dist/aos.css";
-
 export const Block = ({
   tag,
   colorFrom,
@@ -14,13 +11,6 @@ export const Block = ({
   title?: string;
   content?: string;
 }) => {
-  useEffect(() => {
-    if (typeof window !== 'undefined' && !(window as any).AOS) {
-      const AOS = require('aos');
-      AOS.init();
-    }
-  }, []);
-
   return (
     <div data-aos="fade-up" className="flex flex-col gap-8 bg-[#11121C]">
       <p

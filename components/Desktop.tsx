@@ -1,17 +1,6 @@
 import desktopImage from "@/assets/images/desktop.png";
-import "aos/dist/aos.css";
-import { useEffect } from "preact/hooks";
 
 const Desktop = () => {
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
-  }, []);
-
   return (
     <div className="flex w-full flex-col items-center rounded-2xl border-2 border-[#303640] px-4 sm:px-6 md:px-12">
       <div

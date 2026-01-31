@@ -1,20 +1,10 @@
-import seewoImage from "@/assets/images/screenshots/macos.png";
+import linuxImage from "@/assets/images/screenshots/linux.png";
 import win7Image from "@/assets/images/screenshots/win7.png";
 import win11Image from "@/assets/images/screenshots/win11.png";
-import "aos/dist/aos.css";
 import { useEffect, useState, useRef } from "preact/hooks";
 
 const Compatibility = () => {
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
-  }, []);
-
-  const rawScreenshots = [win11Image,  win7Image, seewoImage].map(
+  const rawScreenshots = [win11Image, win7Image, linuxImage].map(
     (it) => it.src,
   );
   const screenshots = [

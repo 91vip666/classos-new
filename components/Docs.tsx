@@ -1,6 +1,4 @@
 import { Button, TransparentButton } from "./ui/Button";
-import AOS from "aos";
-import { useEffect } from "preact/hooks";
 
 // 文档卡片组件
 interface DocCardProps {
@@ -59,15 +57,6 @@ function DocCard({ title, description, features, buttonText, buttonHref, animati
 }
 
 const Docs = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 100,
-    });
-  }, []);
-
   return (
     <div className="min-h-screen bg-mobai-background text-mobai-foreground">
       <div className="max-w-8xl mx-auto px-8 py-24 md:px-12 lg:px-16 xl:px-24">
@@ -127,13 +116,13 @@ const Docs = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TransparentButton 
-              href="mailto:support@classos.com"
+              href="https://qm.qq.com/cgi-bin/qm/qr?authKey=C7JIQte%2B2z6j1lWlIMQixh%2FU26dkv0UD8jBVWfmwp3gZx%2BP4m%2BPbc4NHLVFTkjEc&k=7-bdHG5hLWUt0et0_rByLgf_hjPT622Z&noverify=0"
               className="hover:bg-white/10"
             >
-              发送邮件
+              联系社区
             </TransparentButton>
             <TransparentButton 
-              href="https://github.com/ClassOS/ClassOS/issues"
+              href="https://github.com/Class-Widgets/Class-Widgets/issues"
               className="hover:bg-white/10"
             >
               提交问题

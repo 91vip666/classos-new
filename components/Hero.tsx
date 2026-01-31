@@ -4,19 +4,7 @@ import hongheIcon from "@/components/icon/HONGHE.png";
 import seewoIcon from "@/components/icon/SEEWO.png";
 import Windows from "@/components/icon/Windows";
 import { Button, TransparentButton } from "@/components/ui/Button";
-import "aos/dist/aos.css";
-import { useEffect } from "preact/hooks";
-
 const Hero = () => {
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
-  }, []);
-
   return (
     <div className="h-screen w-full">
       <div
