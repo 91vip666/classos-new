@@ -1,10 +1,20 @@
-import linuxImage from "@/assets/images/screenshots/linux.png";
+import seewoImage from "@/assets/images/screenshots/macos.png";
 import win7Image from "@/assets/images/screenshots/win7.png";
 import win11Image from "@/assets/images/screenshots/win11.png";
+import "aos/dist/aos.css";
 import { useEffect, useState, useRef } from "preact/hooks";
 
 const Compatibility = () => {
-  const rawScreenshots = [win11Image, win7Image, linuxImage].map(
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    });
+  }, []);
+
+  const rawScreenshots = [win11Image,  win7Image, seewoImage].map(
     (it) => it.src,
   );
   const screenshots = [
@@ -132,7 +142,9 @@ const Compatibility = () => {
             <div key={index} className="min-w-full flex-shrink-0">
               <img
                 src={src}
+                alt={`ClassOS 兼容性演示截图 ${index + 1}`}
                 className="ease-mobai-standard h-full w-full object-cover"
+                loading="lazy"
               />
             </div>
           ))}

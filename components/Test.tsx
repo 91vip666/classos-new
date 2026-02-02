@@ -1,6 +1,17 @@
+import "aos/dist/aos.css";
+import { useEffect } from "preact/hooks";
 import { Block } from "@/components/ui/Block";
 
 const Test = () => {
+  useEffect(() => {
+    import("aos").then((AOS) => {
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    });
+  }, []);
+
   return (
     <div className="max-w-8xl mx-auto" data-aos="fade-up">
       <div className="grid gap-24 md:grid-cols-3">

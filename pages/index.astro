@@ -5,10 +5,13 @@ import Desktop from "@/components/Desktop";
 import Personalization from "@/components/Personalization";
 import Compatibility from "@/components/Compatibility";
 import Test from "@/components/Test";
+import Features from "@/components/Features";
+import FAQ from "@/components/FAQ";
 ---
 
 <Layout transition:animate="slide">
   <Hero />
+  <Features client:load />
   <div class="max-w-8xl mx-auto flex flex-col gap-16 py-16 overflow-hidden">
     <div
       class="ease-mobai-bounce flex flex-col gap-24 px-8 transition-all duration-500 md:px-12 lg:px-16 xl:px-24"
@@ -23,4 +26,5 @@ import Test from "@/components/Test";
       </div>
     </div>
   </div>
+  <FAQ client:load />
 </Layout>

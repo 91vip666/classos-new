@@ -6,28 +6,27 @@ import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>ClassOS - 向未来形态的教学系统说你好</title>
-    <meta name="description" content="ClassOS 是一款专为教育设计的智能化教学系统，支持 Windows、希沃、鸿合等多种平台，提供流畅的课件运行体验和丰富的实用工具。" />
-    <meta name="keywords" content="ClassOS, 教学系统, 希沃, 鸿合, 课件, 教育软件, 智能化教学" />
+    <meta name="description" content="ClassOS 是一款专为教育场景打造的下一代教学操作系统，支持 Windows、希沃、鸿合等主流一体机，提供智能化、流畅的教学体验。" />
+    <meta name="keywords" content="ClassOS, 教学系统, 教育操作系统, 希沃一体机, 鸿合一体机, 智慧课堂, 教学软件" />
     
-    {/* Open Graph / Facebook */}
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://classos.com/" />
     <meta property="og:title" content="ClassOS - 向未来形态的教学系统说你好" />
-    <meta property="og:description" content="ClassOS 是一款专为教育设计的智能化教学系统，支持 Windows、希沃、鸿合等多种平台。" />
+    <meta property="og:description" content="专为教育场景打造的下一代教学操作系统，适配主流一体机设备。" />
     <meta property="og:image" content="/favicon.png" />
 
-    {/* Twitter */}
+    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://classos.com/" />
     <meta property="twitter:title" content="ClassOS - 向未来形态的教学系统说你好" />
-    <meta property="twitter:description" content="ClassOS 是一款专为教育设计的智能化教学系统，支持 Windows、希沃、鸿合等多种平台。" />
+    <meta property="twitter:description" content="专为教育场景打造的下一代教学操作系统，适配主流一体机设备。" />
     <meta property="twitter:image" content="/favicon.png" />
   </head>
   <body>
@@ -36,24 +35,6 @@ import { ViewTransitions } from "astro:transitions";
       <slot />
     </main>
     <Footer />
-    <script>
-      import AOS from "aos";
-      import "aos/dist/aos.css";
-
-      const initAOS = () => {
-        AOS.init({
-          duration: 1000,
-          once: true,
-          offset: 100,
-        });
-      };
-
-      // Initial load
-      initAOS();
-
-      // Re-init on page transitions
-      document.addEventListener("astro:page-load", initAOS);
-    </script>
   </body>
 </html>
 

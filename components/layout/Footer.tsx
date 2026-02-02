@@ -1,5 +1,5 @@
-import Apple from "../icon/Apple";
-import Linux from "../icon/Linux";
+import seewoLogo from "@/components/icon/SEEWO.png";
+import hongheLogo from "@/components/icon/HONGHE.png";
 import Windows from "../icon/Windows";
 import { Button, TransparentButton } from "@/components/ui/Button";
 import { navItems } from 'Navs.ts';
@@ -69,12 +69,10 @@ const Footer = () => {
                 <span>Windows</span>
               </TransparentButton>
               <TransparentButton href="/download#seewo" className="flex">
-                <Apple className="h-6 w-6" />
-                <span>希沃</span>
+                <img src={seewoLogo.src} alt="希沃" className="h-6 w-auto object-contain" />
               </TransparentButton>
               <TransparentButton href="/download#HiteVision" className="flex">
-                <Linux className="h-6 w-6" />
-                <span>鸿合</span>
+                <img src={hongheLogo.src} alt="鸿合" className="h-6 w-auto object-contain" />
               </TransparentButton>
             </div>
           </div>
